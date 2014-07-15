@@ -6,8 +6,12 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
+<<<<<<< HEAD
 	
 	var buff = new Buffer(fs.readFileSync('index.html'));
+=======
+	var buff = fs.readFileSync('index.html'));
+>>>>>>> FETCH_HEAD
   	response.send(buff.toString());
 })
 
